@@ -1,0 +1,15 @@
+# Cloudflare Pages / CDN response headers for the built site.
+# Kept under assets/ so the build copies it to dist/_headers automatically.
+
+/assets/*
+  Cache-Control: public, max-age=604800, immutable
+
+/*.html
+  Cache-Control: no-cache, must-revalidate
+  X-Robots-Tag: index, follow, max-image-preview:large
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+
+/robots.txt
+  Cache-Control: public, max-age=3600

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zendyxxx.github.io/china-entry-guide/sitemap.xml
